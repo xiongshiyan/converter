@@ -3,6 +3,8 @@ def ARTIFACT_ID = 'converter'
 def GROUP_ID = 'top.jfunc.common'
 def TYPE = 'jar'
 def DESCRIPTION = '字符串转换为JsonObject、JsonArray、JavaBean等,依赖Json实现'
+def gitUrl = 'https://gitee.com/xxssyyyyssxx/converter.git'
+def siteUrl = 'https://gitee.com/xxssyyyyssxx/converter'
 
 group GROUP_ID
 version VERSION
@@ -74,9 +76,6 @@ uploadArchives {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
-
-def gitUrl = 'https://gitee.com/xxssyyyyssxx/network-converter.git'
-def siteUrl = 'https://gitee.com/xxssyyyyssxx/network-converter'
 
 install {
     repositories.mavenInstaller {
