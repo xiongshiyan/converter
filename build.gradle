@@ -5,6 +5,7 @@ def TYPE = 'jar'
 def DESCRIPTION = '字符串转换为JsonObject、JsonArray、JavaBean等,依赖Json实现'
 def gitUrl = 'https://gitee.com/xxssyyyyssxx/converter.git'
 def siteUrl = 'https://gitee.com/xxssyyyyssxx/converter'
+def REPO_NAME = 'maven'
 
 group GROUP_ID
 version VERSION
@@ -150,7 +151,7 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = "maven"
+        repo = REPO_NAME
         name = ARTIFACT_ID //项目名称
         websiteUrl = siteUrl
         vcsUrl = gitUrl
